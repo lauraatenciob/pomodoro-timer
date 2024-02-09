@@ -4,6 +4,6 @@ This is an application to help you focus on any task you are working on, such as
 
 ## Used technologies
 
-This project was developed with React JS.\
+This project was developed with React JS.
 
 For development purposes, you can create a fork of this repo and run npm install, and then npm starts to launch the development server at localhost:3000.
