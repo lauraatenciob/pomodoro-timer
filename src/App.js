@@ -55,8 +55,8 @@ function App() {
 
   function decrement(id) {
     if (
-      (id === "break" && breakLength === 0) ||
-      (id === "session" && sessionLength === 0) ||
+      (id === "break" && breakLength === 1) ||
+      (id === "session" && sessionLength === 1) ||
       idInterval !== "pause"
     ) {
       return;
@@ -83,6 +83,9 @@ function App() {
     setTotalSeconds(25*60);
     clearInterval(idInterval);
     setIdInterval("pause");
+    const audio = document.getElementById("beep");
+    audio.pause();
+    audio.currentTime = 0;
   }
 
   return (
